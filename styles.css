@@ -1,0 +1,125 @@
+main {
+    position: relative;
+}
+
+.topRow {
+    display: flex;
+    height: 15vw;
+    margin-bottom: 10px;
+}
+
+.topRow > div {
+    background-color: rgb(0, 137, 128);
+    flex: 1;
+}
+
+.topRow div:nth-child(2) {
+    margin: 0 10px;
+}
+
+.midRow {
+    height: 30vw;
+    background-color: rgb(0, 137, 128);
+    margin-bottom: 10px;
+}
+
+.bottomRow {
+    height: 2vw;
+    background-color: greenyellow;
+}
+
+.circle {
+    border-radius: 50%;
+    position: absolute;
+    z-index: 2;
+}
+
+.circle.big {
+    width: 8vw;
+    height: 8vw;
+    border-radius: 50%;
+}
+
+.circle.yellow {
+    background-color: yellow;
+}
+
+.circle.red {
+    background-color: salmon;
+}
+
+.circle.yellow.big {
+    left: 22vw;
+    top: 2vw;
+}
+
+.circle.red.big {
+    left: 30vw;
+    top: 10vw;
+}
+
+.circle.small {
+    width: 4vw;
+    height: 4vw;
+}
+
+.circle.small.yellow {
+    left: 16vw;
+    top: 20vw;
+}
+
+.circle.small.red.topLeft {
+    left: 4vw;
+    top: 1vw;
+}
+
+.circle.small.red.bottomLeft {
+    left: 4vw;
+    top: 12vw;
+}
+
+.circle.small.red.topRight {
+    left: 50vw;
+    top: 4vw;
+}
+
+.midContainer {
+    position: relative;
+}
+
+.triangle {
+    width: 0; 
+    height: 0; 
+    position: absolute;
+    bottom: 0;
+    z-index: 2;
+}
+
+.triangle.tall {
+    border-left: 15vw solid transparent;
+    border-right: 15vw solid transparent;
+    border-bottom: 30vw solid rgb(0, 72, 0);
+    right: 10vw;
+}
+
+.triangle.short {
+    border-left: 10vw solid transparent;
+    border-right: 10vw solid transparent;
+    border-bottom: 25vw solid rgb(94, 255, 86);
+    right: 0;
+}
+
+img {
+    /* width: 250px; */
+    width: 16vw;
+}
+
+.rhino {
+    position: absolute;
+    bottom: -1rem;
+    z-index: 2;
+}
+
+img:nth-child(even) {
+    filter:invert(100%);
+}
